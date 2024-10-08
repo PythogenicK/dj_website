@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/components/logo-footer.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="/css/webpages/home.css">
+    <link rel  = "stylesheet" href ="/css/webpages/book.css">
+    <title>Book</title>
+</head>
+<body>
+    <div id="page-container">
+        <div id="nav"></div>
+        
+        <main id="webpage-content">
+            <div id = "email-form"></div>
+        </main>
+    </div>
+    <div id = "info"></div>
+    <div id="footer"></div>
+
+    <script>
+        $(function(){
+            $("#nav").load("/html/components/navigator.html");
+            $("#email-form").load("/html/components/email-form.html");
+            $("#info").load("/html/components/info.html")
+            $("#footer").load("/html/components/footer.html");
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/webpages/home.css">
+    <link rel="stylesheet" href="/css/components/logo.css">
+    <link rel="stylesheet" href="/css/components/carousel.css">
+    <link rel="stylesheet" href="/css/webpages/about.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/components/carousel.js"></script>
+    <title>DJ SENSEI</title>
+</head>
+
+<body>
+    <nav id="nav"></nav>
+    <main id="webpage-content">
+        <div id="sensei-info">
+            <div id="sensei-icon">
+                <img src="/assets/imgs/sensei_icon.jpg" alt="DJ SENSEI">
+            </div>
+            <div id="sensei-description">
+                <p>Having moved from Ecuador to pursue his dreams in Chicago, SENSEI immersed himself in the city's rich
+                    musical tapestry, from its legendary house scene to its eclectic neighborhoods. The whirlwind time
+                    since has seen SENSEI honoring his Latin American heritage while seamlessly blending it with
+                    Chicago's urban beats and global electronic influences.</p>
+                <p>SENSEI's natural feel for reading the room and crafting the perfect atmosphere has led to a growing
+                    reputation as the go-to DJ for events ranging from weddings to birthdays, corporate gatherings to
+                    underground parties.</p>
+                <p>SENSEI's sets are a testament to his diverse musical palette, effortlessly moving from the warmth of
+                    Ecuadorian rhythms to the pulsating energy of electronic and dubstep. His ability to create the
+                    right vibe for any occasion has made him a favorite among event planners and party-goers alike.</p>
+                <p>With each performance, SENSEI is not just playing music; he's weaving together the threads of his
+                    Ecuadorian heritage, Chicago's diverse soundscape, and the global language of electronic music into
+                    a tapestry that's uniquely his own. As he continues to rise through the ranks of Chicago's DJ scene,
+                    SENSEI stands as a shining example of how cultural fusion and musical passion can create something
+                    truly special on the decks.</p>
+            </div>
+        </div>
+        <div id = "music-content">
+            <div id = "music-title">
+                <p>EXPERIENCE</p>
+                <P>MUSIC</P>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item"><a href="https://soundcloud.com/senseimuzik"><span>SOUND CLOUD</span></a>
+                    </div>
+                    <div class="carousel-item"><a href="https://www.mixcloud.com/senseimuzik/"><span>MIXCLOUD</span></a>
+                    </div>
+                    <div class="carousel-item"><a
+                            href="https://open.spotify.com/artist/7h0eOh4FM4toGVbyIaTyXE"><span>SPOTIFY</span></a>
+                    </div>
+                    <div class="carousel-item"><a href="https://music.apple.com/us/artist/dj-sensei/1234567890"><span>APPLE
+                                MUSIC</span></a></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <div id="socials"></div>
+    <div id="info"></div>
+    <footer id="footer"></footer>
+    <script>
+        $(function () {
+            $("#nav").load("/html/components/navigator.html");
+            $("#info").load("/html/components/info.html");
+            $("#btn").load("/html/components/button.html");
+            $("#footer").load("/html/components/footer.html");
+        });
+    </script>
+</body>
+
+</html>

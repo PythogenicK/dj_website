@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/components/email-form.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="email-form-container">
+        <p id="form-header">Contact</p>
+        <form id="contact-form" class="email-form contactForm">
+            <input type="text" id="name" name="name" required placeholder="Your Name">
+            <input type="email" id="email" name="email" required placeholder="Your Email">
+            <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div id="response" class="formStatus"></div>
+    </div>
+
+    <script src="/js/components/email_form.js"></script>
+</body>
+</html>

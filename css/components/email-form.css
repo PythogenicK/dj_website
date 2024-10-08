@@ -1,0 +1,124 @@
+/* email_form.css */
+
+.email-form-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#form-header {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-align: start;
+    color: white;
+}
+
+.email-form {
+    width: 100%;
+}
+
+.email-form input, 
+.email-form textarea {
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 1.3rem;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.email-form input:focus, 
+.email-form textarea:focus {
+    outline: none;
+    border-bottom-color: white;
+}
+
+.email-form textarea {
+    resize: vertical;
+}
+
+.email-form button {
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.4rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.email-form button:hover {
+    background-color: white;
+    color: black;
+}
+
+#response {
+    margin-top: 20px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 1199.98px) {
+    .email-form-container {
+        max-width: 700px;
+    }
+    
+    #form-header {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .email-form-container {
+        max-width: 600px;
+    }
+    
+    #form-header {
+        font-size: 3rem;
+    }
+    
+    .email-form input,
+    .email-form textarea,
+    .email-form button {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .email-form-container {
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+    
+    #form-header {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    #form-header {
+        font-size: 2rem;
+    }
+    
+    .email-form input,
+    .email-form textarea {
+        font-size: 1rem;
+        padding: 15px 0;
+        margin-bottom: 20px;
+    }
+    
+    .email-form button {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+}

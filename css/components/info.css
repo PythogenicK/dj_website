@@ -1,0 +1,127 @@
+#content-container {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    padding-top: 4rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8rem;
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-height: 300px;
+    max-width: 33%;
+}
+
+#logo img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.info-column {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 33%;
+}
+
+#info-container :nth-child(3) {
+    justify-content: flex-end;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li, li a {
+    font-size: 1rem;
+    color: #8E8E93;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    line-height: 1.5;
+    padding: 5px 0;
+}
+
+li:hover, li:hover a {
+    color: white;
+    /* font-size: 3rem;
+    font-weight: bold; */
+}
+
+li {
+    position: relative;
+    z-index: 1;
+}
+
+/* li:hover::before {
+    content: '';
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    top: 0;
+    left: -10px;
+    right: -10px;
+    bottom: 0;
+} */
+
+@media (max-width: 768px) {
+    #info-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    .info-column, #logo {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    #info-container :nth-child(3) {
+        justify-content: center;
+    }
+
+    li:hover, li:hover a {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #content-container {
+        padding-top: 2rem;
+    }
+
+    #info-container {
+        margin-bottom: 4rem;
+    }
+
+    li, li a {
+        font-size: 0.9rem;
+    }
+
+    li:hover, li:hover a {
+        font-size: 1.5rem;
+    }
+}

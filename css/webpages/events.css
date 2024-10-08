@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+a,p {
+    text-decoration: none;
+    color: white;
+}
+#nav{
+    z-index:1;
+}
+#page-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/path/to/dj-background.jpg') no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+#video-container {
+    width: 100%;
+    height: 80vh; /* Default height for all screens */
+    max-height: 500px; /* Maximum height to prevent excessive scaling on large screens */
+    min-height: 250px; /* Minimum height to ensure visibility on smaller screens */
+    overflow: hidden;
+    position: relative;
+}
+
+#hero {
+    text-align: center;
+    margin-bottom: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 100%;
+}
+
+#hero p {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+#video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#hero {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+#hero p {
+    font-size:5rem;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+#webpage-content {
+    flex: 1 0 auto;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 2rem;
+}
+.information-item{
+    border-style:solid;
+    border-color:rgba(255, 255, 255, 0.34);
+
+    border-width:.5px;
+    border-left:0px;
+    border-right:0;
+
+
+}
+.dropdown-title{
+    font-size:3rem;
+    font-weight:bold;
+}
+#event-content{
+    display:flex;
+    flex-direction: row;
+    
+    margin-bottom:8rem;
+}
+.event-item{
+    display:flex;
+    flex-direction: column;
+    width:40rem;
+    height:auto;
+    
+    margin-left:1rem;
+    margin-right:1rem;
+}
+.event-item video{
+    width:100%;
+    height:100%;
+}
+.event-description h4{
+    margin-top:2rem;
+    margin-bottom:1rem;
+}
+#faq-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 5rem;
+}
+#faq-header p{
+    font-weight: 500;
+    font-size: 4rem;
+}
+.dropdown-title, .info-content p{
+    font-weight: 100;
+    font-size:1.5rem;
+}
+.info-content p{
+    color: #8E8E93;
+}
+.information-content{
+    position:relative;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* padding: 2rem; */
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+#logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-height: 300px; /* Adjust this value as needed */
+}
+
+#logo img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+#socials, #footer {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+
+    #select-events {
+        grid-template-columns: 1fr;
+    }
+
+    .carousel-item video {
+        max-height: none;
+    }
+}

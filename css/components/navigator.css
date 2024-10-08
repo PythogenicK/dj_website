@@ -1,0 +1,35 @@
+.navigator-container {
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 1.75rem;
+    border-width: 1px;
+    box-sizing: border-box;
+
+    border-style: solid;
+    border-color:white;
+}
+
+.navigator-container .nav-link {
+    margin: 0 0.1875rem;
+}
+
+.navigator-container .nav-link a {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 1.25rem;
+    transition: all 0.3s ease;
+    font-size: 0.875rem;
+}
+
+.navigator-container .nav-link a:hover {
+    color: black;
+    background-color: white;
+}

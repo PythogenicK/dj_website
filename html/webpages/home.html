@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/webpages/home.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/js/components/video_play_auto.js" defer></script>
+</head>
+
+<body class="black-bg">
+    <div id="fullscreen-video-container">
+        <video id="logo-video" src="/assets/videos/dj.mp4" muted loop playsinline></video>
+    </div>
+    <div id="nav"></div>
+    <div id="page-container">
+
+        <main id="webpage-content">
+            <div id="footer-logo"></div>
+        </main>
+
+    </div>
+    <div id="footer"></div>
+
+    <script>
+        $(function () {
+            $("#nav").load("/html/components/navigator.html");
+            $("#footer-logo").load("/html/components/logo.html")
+            $("#footer").load("/html/components/footer.html");
+        });
+    </script>
+</body>
+
+</html>
